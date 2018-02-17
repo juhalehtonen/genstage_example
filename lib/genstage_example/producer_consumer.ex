@@ -1,6 +1,10 @@
 defmodule GenstageExample.ProducerConsumer do
   use GenStage
 
+  @moduledoc """
+  Will receive items from producer and check if they should return FizzBuzz.
+  """
+
   require Integer
 
   def start_link do
@@ -14,7 +18,7 @@ defmodule GenstageExample.ProducerConsumer do
   def handle_events(events, _from, state) do
     numbers =
       events
-      |> Enum.filter(&Integer.is_even/1)
+      |> Enum.filter(&GenstageExample.FizzBuzz.is_fizzbuzz?/1)
 
     {:noreply, numbers, state}
   end

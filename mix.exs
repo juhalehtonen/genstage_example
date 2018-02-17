@@ -1,4 +1,4 @@
-defmodule GenstageEample.MixProject do
+defmodule GenstageExample.MixProject do
   use Mix.Project
 
   def project do
