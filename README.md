@@ -1,4 +1,4 @@
-# GenstageSample
+# GenStageExample
 
 Very minimal GenStage test with a Producer, a ProducerConsumer and a Consumer to learn the basics of how GenStage works.
 
