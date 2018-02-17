@@ -15,7 +15,12 @@ defmodule GenstageExample.Application do
       worker(GenstageExample.Consumer, [], id: 2),
       worker(GenstageExample.Consumer, [], id: 3),
       worker(GenstageExample.Consumer, [], id: 4),
-      worker(GenstageExample.Consumer, [], id: 5)
+      worker(GenstageExample.Consumer, [], id: 5),
+      worker(GenstageExample.Consumer, [], id: 6),
+      worker(GenstageExample.Consumer, [], id: 7),
+      worker(GenstageExample.Consumer, [], id: 8),
+      worker(GenstageExample.Consumer, [], id: 9),
+      worker(GenstageExample.Consumer, [], id: 10)
     ]
 
     opts = [strategy: :one_for_one, name: GenstageExample.Supervisor]

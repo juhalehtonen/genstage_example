@@ -1,21 +1,5 @@
 # GenstageSample
 
-**TODO: Add description**
+Very minimal GenStage test with a Producer, a ProducerConsumer and a Consumer to learn the basics of how GenStage works.
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `genstage_sample` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:genstage_sample, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/genstage_sample](https://hexdocs.pm/genstage_sample).
-
+Producer generates numbers, ProducerConsumer filters out everything that doesn't produce "FizzBuzz" in the classic FizzBuzz test, and Consumer prints those numbers to the terminal.
