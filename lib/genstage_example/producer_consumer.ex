@@ -5,8 +5,6 @@ defmodule GenstageExample.ProducerConsumer do
   Will receive items from producer and check if they should return FizzBuzz.
   """
 
-  require Integer
-
   def start_link do
     GenStage.start_link(__MODULE__, :state_doesnt_matter, name: __MODULE__)
   end
